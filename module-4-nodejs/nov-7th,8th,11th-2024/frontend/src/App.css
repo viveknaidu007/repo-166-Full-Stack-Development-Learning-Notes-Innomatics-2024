@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+
+* {
+  font-family: "Poppins", serif;
+}
+
+.about {
+  padding: 70px 0;
+  background-color: #ffebcd; 
+  color: #333; 
+}
+
+.about h4 {
+  color: #ff7f50; 
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  color: #333; 
+  font-weight: 300;
+  font-size: 32px;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+
+.about p {
+  line-height: 36px;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+}
+
+footer {
+  padding: 50px 20px;
+  background-color: #333; 
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+footer .banner {
+  max-width: 750px;
+  text-align: center;
+}
+
+footer .banner h2 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-weight: 200;
+}
+
+footer .banner p {
+  color: #ff7f50; 
+  font-size: 24px;
+}
+
+footer .tag {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px;
+}
+
+footer .tag div {
+  display: flex;
+  gap: 5px;
+}
+
+footer .tag div input {
+  flex: 1;
+  border-radius: 7px;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+footer .tag div button {
+  background-color: #ff7f50; 
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* services */
+.services h2{
+  font-weight: 600;
+  font-size: 36px;
+  color: #333;
+  letter-spacing: 2px;
+}
+.service-img{
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+.card-title{
+  font-weight: 600;
+  font-size: 24px;
+  color: #333;
+}
+
+/* herosection */
+.hero{
+  height: 70vh;
+  background:url('image.jpg') ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.hero-content{
+  z-index: 1;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+.hero-title{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.hero-desc{
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.btn-color{
+  background-color: #ff7f50 !important;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+/* navbar */
+.custom-navbar {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  padding: 10px 15px;
+  margin: 0 5px;
+  color: #ffffff; 
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ff7f50; 
+}

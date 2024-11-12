@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.IO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Socket.Io chat Application</h1>
+    <form id="form">
+        <label for="myname">Name:</label>
+        <input type="text" id="myname" placeholder="Enter your name" required />
+        <label for="message">Message</label>
+        <input type="text" id="message" placeholder="Enter your message" required />
+        <button type="submit">Send</button>
+    </form>
+    <div id="messageArea"></div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</html>
