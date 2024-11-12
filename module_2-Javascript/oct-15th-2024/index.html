@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Local Storage and Session Storage </title>
+</head>
+
+<body>
+    <label for="nameInput"> Enter any name </label>
+    <input type="text" id="nameInput" placeholder="enter ur name"/>
+
+    <button id="saveBtn"> Save name in local storage </button>
+
+    <button id="getBtn"> Get Name from local Storage</button>
+
+    <p id="output"> </p>
+
+
+    <script>
+
+        const nameInput = document.querySelector("#nameInput");
+        const saveBtn = document.querySelector("#saveBtn");
+        const getBtn = document.querySelector("#getBtn");
+        const output = document.querySelector("#output");
+
+        function saveName(){
+            const name = nameInput.value;
+
+            if(name){
+                localStorage.setItem("userName", name)
+                alert("Name saved")
+            }
+            else{
+                alert("please enetr a name!")
+            }
+        }
+
+
+        function getName(){
+            localStorage.getItem('userName')
+            if(storeNAme){
+                output.innerText = "Hello, ${storedName}!"
+            }
+            else{
+                output.innerText = "no name found in localstorage"
+            }
+        }
+
+        saveBtn.addEventListener("click", saveName);         
+        getBtn.addEventListener("click", getName);
+
+
+    </script>
+</body>
+</html>

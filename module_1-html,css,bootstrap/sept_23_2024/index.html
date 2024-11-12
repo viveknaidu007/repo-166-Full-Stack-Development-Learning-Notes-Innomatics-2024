@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd class </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav {
+            background-color: black;
+            height: 30px;
+        }
+        nav a {
+            color: white;
+            list-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        table,th,td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding : 10px;
+        }
+        form{
+            border:2px solid black;
+            width: 400px;
+            padding:20px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=""> ABOUT ME </a>
+            <a href=""> Education </a>
+            <a href=""> Exp </a>
+            <a href=""> Project </a>
+            <a href=""> Skills </a>
+            <a href=""> Contact_ME </a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h4>About Me</h4>
+            <img 
+            src="Untitled.jpg"
+            alt="200px">
+            <p> hello this is vivek , hello bro</p>
+        </section>
+        
+        <section>
+            <h2> Education </h2>
+            <table>
+                <tr>
+                    <th> Sno </th>
+                    <th> Education </th>
+                    <th> Group </th>
+                    <th> University </th>
+                    <th> Year </th>
+                </tr>
+
+                <tr>
+                    <td> Student1 </td>
+                    <td> 10 </td>
+                    <td> Male </td>
+                    <td> 4th </td>
+                    <td> 2000 </td>
+                </tr>
+
+                <tr>
+                    <td> Student2 </td>
+                    <td> 20 </td>
+                    <td> male </td>
+                    <td> 5th </td>
+                    <td> 2001 </td>
+                    
+
+                </tr>
+
+                <tr>
+                    <td> Student3 </td>
+                    <td> 20 </td>
+                    <td> male </td>
+                    <td> 5th </td>
+                    <td> 2002 </td>
+                </tr>
+
+                <tr>
+                    <td> Student4 </td>
+                    <td> 50 </td>
+                    <td> male </td>
+                    <td> 8th </td>
+                    <td> 2003 </td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section>
+            <h2>Contact Me</h2>
+            <form>
+                <input
+                type="text"
+                placeholder="enter ur name here"
+                name="name"
+                />
+                <br />
+                <br />
+                <input
+                type="email"
+                placeholder="enter ur email here.."
+                name="email"
+                />
+                <br />
+                <br/>
+                <input
+                type="password"
+                placeholder="Enter ur password"
+                name="password"
+                />
+                <br />
+                <br />
+                <fieldset>
+                    <legend> Gender </legend>
+                    <input type="radio" name="gender" id="main"/>
+                    <label for="male"> male: </label>
+                    <input type="radio" name="gender" id=""/>
+                    female
+                </fieldset>
+                <br/>
+                <br />
+                <input type="checkbox" name="html" id="" /> HTML
+                <input type="checkbox" name="css" id="" /> CSS
+                <input type="checkbox" name="bootstrap" id="" /> BOOTSTRAP <br /> <br />
+                <select name="location" id="">
+                    <option value=""> location </option>
+                    <option value="hyd"> HYD </option>
+                    <option value="mi"> MI </option>
+                    <option value="kl"> KL </option>
+                    <option value="jk"> JK </option>
+                </select>
+                <br />
+                <br />
+                <button type="submit">submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
